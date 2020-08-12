@@ -1,0 +1,44 @@
+events:
+    title:[]
+    startDate:
+    endDate:
+    eraName: //年号
+    people:[]
+    camp:[]
+    text:
+    location:
+    modernLocation:
+    relatedEvent:
+    relatedWork: //关联作品 如诗歌，小说，游戏，影视作品
+    tags:
+
+
+people:
+    name: { type: String},
+    nickname:{ type:String}, //人称
+    styleName:{ type:String}, //字
+    pseudonym:{ type:String}, //号
+    posthumousTitle:{ type:String},//谥号
+    gender: { type: String},
+    birth: { type: Date},
+    death: { type: Date},
+    hometown: {type: Date},
+    camp: { type: String},
+    lord：{ } //maybe array
+    identity: { type: String}, //this should be array
+    father: { type: String},
+    mother: { type: String},
+    wife: {} //array
+    sister: {} //array
+    brother: {} //array
+    children: { type: [String]}, //array
+    involvedBattles: { type: Boolean},
+    involvedEvents: { type: Boolean},
+    tags: { type: [String]},
+    biography: { type: String }
+     relatedWork: //关联作品 如诗歌，小说，游戏，影视作品
+
+Since these people may have different lords that they pledged loyalty to 
+and have different identities or official posts 
+during different time period
+I wonder how to assign those items to the corresponding years
